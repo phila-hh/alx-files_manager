@@ -2,7 +2,7 @@ import { createClient } from 'redis';
 import { promisify } from 'util';
 
 
-class RedisClient 
+class RedisClient { 
   constructor() {
     this.client = createClient();
     this.isClientConnected = true;
