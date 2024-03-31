@@ -16,7 +16,11 @@ class DBClient {
   }
 
   isAlive() {
-    return this.client.isConnected();
+    if (this.client.isConnected()) {
+        return true;
+    } else {
+        return false;
+    }
   }
 
   async nbUsers() {
